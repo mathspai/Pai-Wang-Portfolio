@@ -1,22 +1,29 @@
-# Pai Wang Portfolio
+# Pai Wang Final Portfolio
 
-A static final class portfolio website collecting semester projects around the topic **When Nature Becomes Data**.
+This is my final class portfolio website for the semester. The portfolio theme is **When Nature Becomes Data**, focusing on how natural spaces can be photographed, edited, compressed, animated, designed, and re-entered through digital media.
 
-## Included Work
+## Portfolio Topic
 
-- Portfolio statement
-- Digital Photography assignment images
-- GIF studies
-- Experimental Documentary Video
-- Graphic Design Project PDF
-- Link to the Twine project
+My work explores nature as both a real environment and a digital image system. I use ponds, flowers, branches, pathways, water, and shifting light as source material, then translate those observations into photography, GIF studies, experimental documentary video, graphic design, and an interactive Twine project.
 
-## Files
+## Website Sections
 
-- `index.html`: main portfolio page
-- `styles.css`: visual design and responsive layout
-- `script.js`: photography lightbox interaction
-- `assets/`: images, GIFs, video, and PDF poster
+- **Portfolio Statement**: overview of the semester topic
+- **Digital Photography and GIF Studies**: still images and animated image studies from natural environments
+- **Photography Gallery**: selected photographs with a lightbox viewer
+- **Experimental Documentary Video**: embedded final video
+- **Graphic Design Project**: PDF poster preview and link
+- **Twine Project**: external link to the interactive project
+
+## Live Project Links
+
+Twine project:
+
+```text
+https://baixin-pai.itch.io/garden
+```
+
+No password is required to view the work.
 
 ## Local Preview
 
@@ -32,7 +39,7 @@ Then open:
 http://localhost:5178
 ```
 
-## GitHub Pages
+## GitHub Pages Setup
 
 After pushing this folder to GitHub:
 
@@ -41,9 +48,11 @@ After pushing this folder to GitHub:
 3. Set `Build and deployment` to `Deploy from a branch`
 4. Select branch `main`
 5. Select folder `/root`
+6. Test the published link before submitting it
 
-Twine project link:
+## Project Files
 
-```text
-https://baixin-pai.itch.io/garden
-```
+- `index.html`: main portfolio page
+- `styles.css`: typography, color system, and responsive layout
+- `script.js`: photography lightbox interaction
+- `assets/`: images, GIFs, video, PDF poster, and poster preview

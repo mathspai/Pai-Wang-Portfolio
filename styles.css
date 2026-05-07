@@ -1,14 +1,18 @@
 :root {
   color-scheme: light;
-  --ink: #171a13;
-  --muted: #606a54;
-  --paper: #f5f1e8;
-  --moss: #314522;
-  --leaf: #6f8d32;
-  --water: #496f69;
-  --rose: #c33b65;
-  --sun: #d7b85b;
-  --line: rgba(23, 26, 19, 0.16);
+  --ink: #1b1a18;
+  --charcoal: #242321;
+  --muted: #687064;
+  --paper: #f4f1ea;
+  --mist: #e9edf0;
+  --moss: #2e6a42;
+  --leaf: #7f973b;
+  --water: #5ea6d8;
+  --rose: #d64b79;
+  --petal: #f5c8d7;
+  --line: rgba(27, 26, 24, 0.16);
+  --serif: "Bodoni 72", Didot, "Baskerville", Georgia, "Times New Roman", serif;
+  --sans: "Aptos", "Inter", "Segoe UI", Arial, sans-serif;
 }
 
 * {
@@ -23,7 +27,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Inter", "Segoe UI", "Microsoft YaHei", sans-serif;
+  font-family: var(--sans);
   line-height: 1.5;
 }
 
@@ -51,11 +55,11 @@ a {
   gap: 24px;
   padding: 18px clamp(18px, 4vw, 56px);
   color: #fffdf2;
-  background: linear-gradient(to bottom, rgba(11, 18, 8, 0.74), rgba(11, 18, 8, 0));
+  background: linear-gradient(to bottom, rgba(18, 19, 17, 0.86), rgba(18, 19, 17, 0));
 }
 
 .brand {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--serif);
   font-size: clamp(18px, 2vw, 25px);
   letter-spacing: 0;
 }
@@ -83,7 +87,7 @@ nav a:focus-visible {
   display: grid;
   align-items: end;
   overflow: hidden;
-  background: #10150c;
+  background: var(--charcoal);
 }
 
 .hero-video,
@@ -96,13 +100,13 @@ nav a:focus-visible {
 
 .hero-video {
   object-fit: cover;
-  filter: saturate(1.1) contrast(1.05);
+  filter: saturate(0.92) contrast(1.12);
 }
 
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(7, 11, 5, 0.72), rgba(7, 11, 5, 0.16) 58%, rgba(7, 11, 5, 0.2)),
-    linear-gradient(0deg, rgba(7, 11, 5, 0.72), rgba(7, 11, 5, 0) 42%);
+    linear-gradient(90deg, rgba(16, 17, 15, 0.78), rgba(16, 17, 15, 0.18) 58%, rgba(16, 17, 15, 0.26)),
+    linear-gradient(0deg, rgba(16, 17, 15, 0.74), rgba(16, 17, 15, 0) 42%);
 }
 
 .hero-copy {
@@ -117,7 +121,7 @@ nav a:focus-visible {
 .section-mark {
   display: inline-block;
   margin: 0 0 14px;
-  color: var(--sun);
+  color: var(--water);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0;
@@ -127,10 +131,10 @@ nav a:focus-visible {
 .hero h1 {
   margin: 0;
   max-width: 10em;
-  font-family: Georgia, "Times New Roman", "Microsoft YaHei", serif;
+  font-family: var(--serif);
   font-size: clamp(44px, 8.8vw, 118px);
   line-height: 0.98;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .hero p {
@@ -163,8 +167,8 @@ nav a:focus-visible {
 }
 
 .primary {
-  background: var(--rose);
-  border-color: var(--rose);
+  background: var(--moss);
+  border-color: var(--moss);
   color: #fff;
 }
 
@@ -188,6 +192,7 @@ nav a:focus-visible {
 }
 
 .intro {
+  background: linear-gradient(90deg, #f7f5ef 0%, var(--paper) 52%, #edf2ee 100%);
   display: grid;
   grid-template-columns: minmax(240px, 0.85fr) minmax(280px, 1fr);
   gap: clamp(28px, 6vw, 90px);
@@ -199,10 +204,10 @@ nav a:focus-visible {
 .section-heading h2,
 .play-copy h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", "Microsoft YaHei", serif;
+  font-family: var(--serif);
   font-size: clamp(34px, 5vw, 72px);
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .intro p,
@@ -228,6 +233,10 @@ nav a:focus-visible {
   grid-template-columns: 1.3fr 0.85fr;
   grid-auto-rows: minmax(260px, 34vw);
   gap: 18px;
+}
+
+.motion-section {
+  background: #f1f3e8;
 }
 
 figure {
@@ -259,11 +268,11 @@ figcaption,
 }
 
 .gallery-section {
-  background: #eef0e3;
+  background: var(--mist);
 }
 
 .video-section {
-  background: #f7f4ec;
+  background: #faf7f2;
   border-top: 1px solid var(--line);
 }
 
@@ -312,7 +321,7 @@ figcaption,
 .tile:hover img,
 .tile:focus-visible img {
   transform: scale(1.045);
-  filter: saturate(1.15);
+  filter: saturate(1.08) contrast(1.04);
 }
 
 .tile::after,
@@ -334,7 +343,7 @@ figure::after {
 }
 
 .poster-section {
-  background: #221f1a;
+  background: var(--charcoal);
   color: #fffdf2;
 }
 
@@ -360,10 +369,10 @@ figure::after {
 
 .poster-copy h3 {
   margin: 0 0 18px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--serif);
   font-size: clamp(34px, 5vw, 70px);
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .poster-copy p {
@@ -376,7 +385,9 @@ figure::after {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
   gap: clamp(24px, 5vw, 72px);
   align-items: center;
-  background: var(--paper);
+  background:
+    linear-gradient(90deg, rgba(245, 200, 215, 0.3), rgba(244, 241, 234, 0.86) 42%, rgba(94, 166, 216, 0.18)),
+    var(--paper);
 }
 
 .play-image {
