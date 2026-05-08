@@ -39,16 +39,6 @@ Then open:
 http://localhost:5178
 ```
 
-## GitHub Pages Setup
-
-After pushing this folder to GitHub:
-
-1. Open repository `Settings`
-2. Go to `Pages`
-3. Set `Build and deployment` to `Deploy from a branch`
-4. Select branch `main`
-5. Select folder `/root`
-6. Test the published link before submitting it
 
 ## Project Files
 
